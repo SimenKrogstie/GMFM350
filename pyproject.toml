@@ -1,7 +1,21 @@
 [project]
 name = "gmfm350"
 version = "0.1.0"
-description = "Add your description here"
+description = "Assignments and project work in the coures GMFM350 - Big Data and Machine Learning in Remote Sensing @ NMBU"
 readme = "README.md"
+authors = [
+    { name = "Simen Krogstie", email = "simenkrogstie@gmail.com" }
+]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "gdal", 
+    "rasterio",
+    "rioxarray",
+    "xarray",
+    "dask",
+    "matplotlib",
+    "seaborn",
+    "geopandas",
+    "pandas",
+    "netcdf4"
+]
