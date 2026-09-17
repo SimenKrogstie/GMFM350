@@ -17,5 +17,6 @@ dependencies = [
     "seaborn",
     "geopandas",
     "pandas",
-    "netcdf4"
+    "netcdf4",
+    "jupyter"
 ]
