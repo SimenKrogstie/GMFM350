@@ -19,5 +19,6 @@ dependencies = [
     "pandas",
     "netcdf4",
     "jupyter",
-    "distributed"
+    "distributed",
+    "bokeh>=3.1.0",
 ]
