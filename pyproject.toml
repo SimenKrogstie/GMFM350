@@ -21,4 +21,6 @@ dependencies = [
     "jupyter",
     "distributed",
     "bokeh>=3.1.0",
+    "plotly>=7.1.0",
+    "kaleido>=1.4.0",
 ]
