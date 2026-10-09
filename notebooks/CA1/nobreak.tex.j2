@@ -1,0 +1,30 @@
+((*- extends 'index.tex.j2' -*))
+
+% Remove the title (filename) and date
+((* block maketitle *))((* endblock maketitle *))
+
+% Make the code-cell boxes unbreakable, so a cell is never split across pages
+((* block definitions *))
+((( super() )))
+\tcbset{breakable/.code={}}
+\newenvironment{keeptogether}{\par\noindent\begin{minipage}{\linewidth}}{\end{minipage}\par\medskip}
+((* endblock definitions *))
+
+% Keep each output (prints, tables, figures) together on one page
+((* block stream *))
+\begin{keeptogether}
+((( super() )))
+\end{keeptogether}
+((* endblock stream *))
+
+((* block execute_result scoped *))
+\begin{keeptogether}
+((( super() )))
+\end{keeptogether}
+((* endblock execute_result *))
+
+((* block display_data scoped *))
+\begin{keeptogether}
+((( super() )))
+\end{keeptogether}
+((* endblock display_data *))
