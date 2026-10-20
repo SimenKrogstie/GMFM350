@@ -26,4 +26,5 @@ dependencies = [
     "pystac-client>=0.9.0",
     "planetary-computer>=1.0.0",
     "stackstac>=0.5.1",
+    "scikit-learn>=1.9.1",
 ]
