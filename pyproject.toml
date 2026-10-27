@@ -27,4 +27,5 @@ dependencies = [
     "planetary-computer>=1.0.0",
     "stackstac>=0.5.1",
     "scikit-learn>=1.9.1",
+    "tensorflow>=2.21.0",
 ]
