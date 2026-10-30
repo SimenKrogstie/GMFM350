@@ -28,7 +28,8 @@ data/
 *.parquet
 *.feather
 *.tif
-.vrt
+*.vrt
+*.pdf
 
 # Cache
 cache/
